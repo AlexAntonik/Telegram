@@ -302,14 +302,14 @@ public class SharingLiveLocationCell extends FrameLayout {
         if (DialogObject.isUserDialog(info.id)) {
             TLRPC.User user = MessagesController.getInstance(currentAccount).getUser(info.id);
             if (user != null) {
-                avatarDrawable.setInfo(user);
+                avatarDrawable.setInfo(currentAccount, user);
                 nameTextView.setText(ContactsController.formatName(user.first_name, user.last_name));
                 avatarImageView.setForUserOrChat(user, avatarDrawable);
             }
         } else {
             TLRPC.Chat chat = MessagesController.getInstance(currentAccount).getChat(-info.id);
             if (chat != null) {
-                avatarDrawable.setInfo(chat);
+                avatarDrawable.setInfo(currentAccount, chat);
                 nameTextView.setText(chat.title);
                 avatarImageView.setForUserOrChat(chat, avatarDrawable);
             }
@@ -334,14 +334,14 @@ public class SharingLiveLocationCell extends FrameLayout {
         if (DialogObject.isUserDialog(info.did)) {
             TLRPC.User user = MessagesController.getInstance(currentAccount).getUser(info.did);
             if (user != null) {
-                avatarDrawable.setInfo(user);
+                avatarDrawable.setInfo(currentAccount, user);
                 nameTextView.setText(ContactsController.formatName(user.first_name, user.last_name));
                 avatarImageView.setForUserOrChat(user, avatarDrawable);
             }
         } else {
             TLRPC.Chat chat = MessagesController.getInstance(currentAccount).getChat(-info.did);
             if (chat != null) {
-                avatarDrawable.setInfo(chat);
+                avatarDrawable.setInfo(currentAccount, chat);
                 nameTextView.setText(chat.title);
                 avatarImageView.setForUserOrChat(chat, avatarDrawable);
             }

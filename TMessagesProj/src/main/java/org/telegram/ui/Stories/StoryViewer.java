@@ -1615,6 +1615,9 @@ public class StoryViewer implements NotificationCenter.NotificationCenterDelegat
         AndroidUtilities.hideKeyboard(fragment.getFragmentView());
     }
 
+    static int J = 0;
+    int j = J++;
+
     private void showKeyboard() {
         PeerStoriesView currentPeerView = storiesViewPager.getCurrentPeerView();
         if (currentPeerView != null) {
@@ -2207,7 +2210,6 @@ public class StoryViewer implements NotificationCenter.NotificationCenterDelegat
         transitionViewHolder.storyImage = null;
         transitionViewHolder.avatarImage = null;
         containerView.disableHwAcceleration();
-        checkNavBarColor();
         locker.unlock();
         if (currentPlayerScope != null) {
             currentPlayerScope.invalidate();
@@ -2221,6 +2223,7 @@ public class StoryViewer implements NotificationCenter.NotificationCenterDelegat
         windowView = null;
         isShowing = false;
         foundViewToClose = false;
+        checkNavBarColor();
         if (onCloseListener != null) {
             onCloseListener.run();
             onCloseListener = null;

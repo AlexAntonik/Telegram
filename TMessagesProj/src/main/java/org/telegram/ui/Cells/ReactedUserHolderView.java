@@ -167,7 +167,7 @@ public class ReactedUserHolderView extends FrameLayout {
         int colorFilter = Theme.getColor(style == STYLE_STORY ? Theme.key_windowBackgroundWhiteBlackText : Theme.key_chats_verifiedBackground, resourcesProvider);
         statusBadgeComponent.updateDrawable(user, chat, colorFilter, false);
 
-        avatarDrawable.setInfo(u);
+        avatarDrawable.setInfo(currentAccount, u);
         if (user != null) {
             dialogId = user.id;
             titleView.setText(UserObject.getUserName(user));
