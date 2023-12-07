@@ -8,7 +8,7 @@ import androidx.core.graphics.ColorUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.telegram.messenger.SegmentTree;
+import org.telegram.alexContest.SegmentTree;
 import org.telegram.ui.ActionBar.ThemeColors;
 
 import java.text.SimpleDateFormat;

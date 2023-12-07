@@ -7,7 +7,7 @@ import android.text.InputType;
 import android.util.TypedValue;
 import android.view.Gravity;
 
-import org.telegram.messenger.AndroidUtilities;
+import org.telegram.alexContest.AndroidUtilities;
 import org.telegram.ui.ActionBar.Theme;
 
 public class OutlineEditText extends OutlineTextContainerView {

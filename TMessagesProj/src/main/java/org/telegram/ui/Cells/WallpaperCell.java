@@ -28,12 +28,12 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.MediaController;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SvgHelper;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.MediaController;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.SvgHelper;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.BackupImageView;

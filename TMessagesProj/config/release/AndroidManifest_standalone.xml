@@ -33,7 +33,7 @@
 
         <activity-alias
             android:enabled="false"
-            android:name="org.telegram.messenger.VintageIcon"
+            android:name="org.telegram.alexContest.VintageIcon"
             android:targetActivity="org.telegram.ui.LaunchActivity"
             android:icon="@mipmap/icon_6_launcher_sa"
             android:roundIcon="@mipmap/icon_6_launcher_sa"
@@ -49,7 +49,7 @@
 
         <activity-alias
             android:enabled="false"
-            android:name="org.telegram.messenger.AquaIcon"
+            android:name="org.telegram.alexContest.AquaIcon"
             android:targetActivity="org.telegram.ui.LaunchActivity"
             android:icon="@mipmap/icon_4_launcher_sa"
             android:roundIcon="@mipmap/icon_4_launcher_sa"
@@ -65,7 +65,7 @@
 
         <activity-alias
             android:enabled="false"
-            android:name="org.telegram.messenger.PremiumIcon"
+            android:name="org.telegram.alexContest.PremiumIcon"
             android:targetActivity="org.telegram.ui.LaunchActivity"
             android:icon="@mipmap/icon_3_launcher_sa"
             android:roundIcon="@mipmap/icon_3_launcher_sa"
@@ -81,7 +81,7 @@
 
         <activity-alias
             android:enabled="false"
-            android:name="org.telegram.messenger.TurboIcon"
+            android:name="org.telegram.alexContest.TurboIcon"
             android:targetActivity="org.telegram.ui.LaunchActivity"
             android:icon="@mipmap/icon_5_launcher_sa"
             android:roundIcon="@mipmap/icon_5_launcher_sa"
@@ -97,7 +97,7 @@
 
         <activity-alias
             android:enabled="false"
-            android:name="org.telegram.messenger.NoxIcon"
+            android:name="org.telegram.alexContest.NoxIcon"
             android:targetActivity="org.telegram.ui.LaunchActivity"
             android:icon="@mipmap/icon_2_launcher_sa"
             android:roundIcon="@mipmap/icon_2_launcher_sa"
@@ -114,7 +114,7 @@
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA-t0jLPjUt2FxrA8VPK2EiYHcYcboIR6k" />
 
         <service
-            android:name="org.telegram.messenger.GcmPushListenerService" android:exported="true">
+            android:name="org.telegram.alexContest.GcmPushListenerService" android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

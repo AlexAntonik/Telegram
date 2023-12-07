@@ -51,13 +51,13 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.GenericProvider;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SharedConfig;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.GenericProvider;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.SharedConfig;
 import org.telegram.ui.ActionBar.Theme;
 
 import java.lang.annotation.Retention;

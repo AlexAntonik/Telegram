@@ -26,18 +26,17 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.messenger.AccountInstance;
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ChatObject;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.LiteMode;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.R;
-import org.telegram.messenger.UserConfig;
-import org.telegram.messenger.UserObject;
-import org.telegram.messenger.Utilities;
-import org.telegram.messenger.voip.VoIPService;
+import org.telegram.alexContest.AccountInstance;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ChatObject;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.LiteMode;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.UserObject;
+import org.telegram.alexContest.Utilities;
+import org.telegram.alexContest.voip.VoIPService;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.SimpleTextView;
 import org.telegram.ui.ActionBar.Theme;
@@ -469,7 +468,7 @@ public class GroupCallUserCell extends FrameLayout {
         if (id > 0) {
             currentUser = accountInstance.getMessagesController().getUser(id);
             currentChat = null;
-            avatarDrawable.setInfo(accountInstance.getCurrentAccount(), currentUser);
+            avatarDrawable.setInfo(currentUser);
 
             nameTextView.setText(UserObject.getUserName(currentUser));
             if (currentUser != null && currentUser.verified) {
@@ -509,7 +508,7 @@ public class GroupCallUserCell extends FrameLayout {
         } else {
             currentChat = accountInstance.getMessagesController().getChat(-id);
             currentUser = null;
-            avatarDrawable.setInfo(accountInstance.getCurrentAccount(), currentChat);
+            avatarDrawable.setInfo(currentChat);
 
             if (currentChat != null) {
                 nameTextView.setText(currentChat.title);

@@ -11,14 +11,14 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.DownloadController;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.ImageLoader;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.R;
-import org.telegram.messenger.UserConfig;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.DownloadController;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.ImageLoader;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.UserConfig;
 import org.telegram.tgnet.TLRPC;
 
 import java.io.File;

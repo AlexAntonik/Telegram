@@ -1,8 +1,8 @@
 package org.telegram.ui;
 
-import static org.telegram.messenger.SharedConfig.SAVE_TO_GALLERY_FLAG_CHANNELS;
-import static org.telegram.messenger.SharedConfig.SAVE_TO_GALLERY_FLAG_GROUP;
-import static org.telegram.messenger.SharedConfig.SAVE_TO_GALLERY_FLAG_PEER;
+import static org.telegram.alexContest.SharedConfig.SAVE_TO_GALLERY_FLAG_CHANNELS;
+import static org.telegram.alexContest.SharedConfig.SAVE_TO_GALLERY_FLAG_GROUP;
+import static org.telegram.alexContest.SharedConfig.SAVE_TO_GALLERY_FLAG_PEER;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -22,14 +22,14 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ContactsController;
-import org.telegram.messenger.DialogObject;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SaveToGallerySettingsHelper;
-import org.telegram.messenger.UserConfig;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ContactsController;
+import org.telegram.alexContest.DialogObject;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.SaveToGallerySettingsHelper;
+import org.telegram.alexContest.UserConfig;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.ActionBar;

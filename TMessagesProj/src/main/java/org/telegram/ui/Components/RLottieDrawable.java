@@ -24,19 +24,18 @@ import android.text.TextUtils;
 import android.view.HapticFeedbackConstants;
 import android.view.View;
 
-import com.google.android.exoplayer2.util.Log;
 import com.google.gson.Gson;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.DispatchQueue;
-import org.telegram.messenger.DispatchQueuePool;
-import org.telegram.messenger.DispatchQueuePoolBackground;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.ImageReceiver;
-import org.telegram.messenger.R;
-import org.telegram.messenger.Utilities;
-import org.telegram.messenger.utils.BitmapsCache;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ApplicationLoader;
+import org.telegram.alexContest.DispatchQueue;
+import org.telegram.alexContest.DispatchQueuePool;
+import org.telegram.alexContest.DispatchQueuePoolBackground;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.ImageReceiver;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.Utilities;
+import org.telegram.alexContest.utils.BitmapsCache;
 
 import java.io.File;
 import java.io.FileInputStream;

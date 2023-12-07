@@ -39,16 +39,15 @@ import android.widget.LinearLayout;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.DocumentObject;
-import org.telegram.messenger.Emoji;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.LiteMode;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SvgHelper;
-import org.telegram.messenger.UserConfig;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.DocumentObject;
+import org.telegram.alexContest.Emoji;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.LiteMode;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.SvgHelper;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
@@ -344,7 +343,7 @@ public class ScrollSlidingTabStrip extends HorizontalScrollView {
 
             AvatarDrawable avatarDrawable = new AvatarDrawable();
             avatarDrawable.setTextSize(AndroidUtilities.dp(14));
-            avatarDrawable.setInfo(UserConfig.selectedAccount, chat);
+            avatarDrawable.setInfo(chat);
 
             BackupImageView imageView = stickerTabView.imageView;
             imageView.setLayerNum(imageReceiversPlayingNum);

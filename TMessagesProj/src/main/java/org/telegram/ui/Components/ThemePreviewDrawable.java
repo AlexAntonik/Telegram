@@ -12,12 +12,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.SparseIntArray;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.Bitmaps;
-import org.telegram.messenger.DocumentObject;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SvgHelper;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ApplicationLoader;
+import org.telegram.alexContest.Bitmaps;
+import org.telegram.alexContest.DocumentObject;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.SvgHelper;
 import org.telegram.ui.ActionBar.Theme;
 
 import java.io.File;

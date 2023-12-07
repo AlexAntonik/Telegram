@@ -1,13 +1,12 @@
 package org.telegram.ui.Stories;
 
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.text.TextPaint;
 import android.text.style.ReplacementSpan;
 import android.view.View;
 
-import org.telegram.messenger.AndroidUtilities;
+import org.telegram.alexContest.AndroidUtilities;
 import org.telegram.ui.Components.CubicBezierInterpolator;
 
 public class UploadingDotsSpannable extends ReplacementSpan {

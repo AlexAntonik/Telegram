@@ -1,11 +1,11 @@
 package org.telegram.ui.Components.Reactions;
 
-import static org.telegram.messenger.SharedConfig.PERFORMANCE_CLASS_HIGH;
-import static org.telegram.messenger.SharedConfig.getDevicePerformanceClass;
+import static org.telegram.alexContest.SharedConfig.PERFORMANCE_CLASS_HIGH;
+import static org.telegram.alexContest.SharedConfig.getDevicePerformanceClass;
 
 import android.view.View;
 
-import org.telegram.messenger.ImageLoader;
+import org.telegram.alexContest.ImageLoader;
 
 import java.util.Arrays;
 import java.util.HashSet;

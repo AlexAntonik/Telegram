@@ -17,16 +17,16 @@ import android.view.Gravity;
 import android.view.HapticFeedbackConstants;
 import android.view.View;
 
-import org.telegram.messenger.AccountInstance;
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.DialogObject;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.ImageReceiver;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
-import org.telegram.messenger.UserConfig;
+import org.telegram.alexContest.AccountInstance;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.DialogObject;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.ImageReceiver;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.UserConfig;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AvatarDrawable;
@@ -126,7 +126,7 @@ public class ChatPullingDownDrawable implements NotificationCenter.NotificationC
                 MessagesController.getInstance(currentAccount).getChat(dialog.id);
             }
             AvatarDrawable avatarDrawable = new AvatarDrawable();
-            avatarDrawable.setInfo(currentAccount, nextChat);
+            avatarDrawable.setInfo(nextChat);
             imageReceiver.setImage(ImageLocation.getForChat(nextChat, ImageLocation.TYPE_SMALL), "50_50", avatarDrawable, null, UserConfig.getInstance(0).getCurrentUser(), 0);
             MessagesController.getInstance(currentAccount).ensureMessagesLoaded(dialog.id, 0, null);
             counterDrawable.setCount(dialog.unread_count, false);

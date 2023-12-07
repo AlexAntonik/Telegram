@@ -7,12 +7,11 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.accessibility.AccessibilityNodeInfo;
-import android.widget.CheckBox;
 
 import androidx.core.content.ContextCompat;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.GenericProvider;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.GenericProvider;
 import org.telegram.ui.ActionBar.Theme;
 
 public class CheckBox2 extends View {

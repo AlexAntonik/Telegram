@@ -3,11 +3,10 @@ package org.telegram.ui.Stories.recorder;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 
-import androidx.core.graphics.ColorUtils;
 import androidx.palette.graphics.Palette;
 import androidx.palette.graphics.Target;
 
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.Utilities;
 
 public class DominantColors {
 
