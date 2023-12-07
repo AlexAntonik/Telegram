@@ -11,10 +11,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.R;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.R;
 import org.telegram.tgnet.RequestDelegate;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;

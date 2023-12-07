@@ -14,14 +14,14 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.Emoji;
-import org.telegram.alexContest.FileLoader;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.MediaDataController;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.SharedConfig;
-import org.telegram.alexContest.UserConfig;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.Emoji;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.MediaDataController;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.UserConfig;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.EmojiReplacementCell;

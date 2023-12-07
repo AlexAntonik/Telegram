@@ -42,10 +42,10 @@ import androidx.dynamicanimation.animation.SpringForce;
 
 import com.google.android.exoplayer2.C;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ApplicationLoader;
-import org.telegram.alexContest.MediaController;
-import org.telegram.alexContest.R;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.MediaController;
+import org.telegram.messenger.R;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.LaunchActivity;
 import org.telegram.ui.PhotoViewer;

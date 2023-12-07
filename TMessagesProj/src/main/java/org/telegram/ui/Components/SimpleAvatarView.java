@@ -12,8 +12,8 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ImageReceiver;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ImageReceiver;
 import org.telegram.tgnet.TLObject;
 import org.telegram.ui.ActionBar.Theme;
 

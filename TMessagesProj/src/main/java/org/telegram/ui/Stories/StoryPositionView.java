@@ -4,12 +4,14 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.text.SpannableStringBuilder;
+import android.text.StaticLayout;
+import android.text.TextPaint;
 import android.widget.FrameLayout;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.Utilities;
 import org.telegram.ui.Cells.DialogCell;
 import org.telegram.ui.Components.AnimatedTextView;
 

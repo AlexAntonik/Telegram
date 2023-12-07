@@ -6,15 +6,17 @@ import android.graphics.fonts.Font;
 import android.graphics.fonts.SystemFonts;
 import android.os.Build;
 import android.text.TextUtils;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.GenericProvider;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.Utilities;
 
 import java.io.File;
 import java.io.IOException;

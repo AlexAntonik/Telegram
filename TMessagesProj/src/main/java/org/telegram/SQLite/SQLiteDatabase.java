@@ -8,9 +8,9 @@
 
 package org.telegram.SQLite;
 
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.ApplicationLoader;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.ApplicationLoader;
 
 public class SQLiteDatabase {
 

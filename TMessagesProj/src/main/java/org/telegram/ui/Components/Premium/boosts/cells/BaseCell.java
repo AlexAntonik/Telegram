@@ -1,10 +1,11 @@
 package org.telegram.ui.Components.Premium.boosts.cells;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dp;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.text.SpannableString;
@@ -14,11 +15,11 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.Emoji;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.R;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.Emoji;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.R;
 import org.telegram.ui.ActionBar.SimpleTextView;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AvatarDrawable;

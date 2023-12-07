@@ -1,6 +1,6 @@
 package org.telegram.ui;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dp;
 import static org.telegram.tgnet.TLRPC.TL_payments_checkedGiftCode.NO_USER_ID;
 
 import android.animation.Animator;
@@ -24,14 +24,15 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ChatObject;
-import org.telegram.alexContest.ContactsController;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.UserConfig;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.ContactsController;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.tgnet.tl.TL_stories;

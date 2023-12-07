@@ -3,7 +3,7 @@ package org.telegram.ui.Components.Premium;
 import android.content.Context;
 import android.graphics.Canvas;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.TextCell;
 

@@ -7,7 +7,7 @@ import android.view.ViewOutlineProvider;
 
 import androidx.annotation.RequiresApi;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class RoundRectOutlineProvider extends ViewOutlineProvider {

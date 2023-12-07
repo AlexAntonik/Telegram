@@ -39,13 +39,13 @@ import android.widget.Toast;
 
 import androidx.core.widget.NestedScrollView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ApplicationLoader;
-import org.telegram.alexContest.ContactsController;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.browser.Browser;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.ContactsController;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.browser.Browser;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.AlertDialog;

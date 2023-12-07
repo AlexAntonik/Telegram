@@ -4,7 +4,7 @@ import android.animation.ValueAnimator;
 import android.graphics.Rect;
 import android.view.MotionEvent;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 public class ChartPickerDelegate {
 

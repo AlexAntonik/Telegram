@@ -70,6 +70,7 @@ import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.ImageSpan;
 import android.text.style.URLSpan;
+import android.util.Log;
 import android.util.Pair;
 import android.util.Property;
 import android.util.SparseArray;
@@ -120,53 +121,53 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.zxing.common.detector.MathUtils;
 
 import org.telegram.PhoneFormat.PhoneFormat;
-import org.telegram.alexContest.AccountInstance;
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ApplicationLoader;
-import org.telegram.alexContest.BotWebViewVibrationEffect;
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.ChatMessageSharedResources;
-import org.telegram.alexContest.ChatMessagesMetadataController;
-import org.telegram.alexContest.ChatObject;
-import org.telegram.alexContest.ChatThemeController;
-import org.telegram.alexContest.CodeHighlighting;
-import org.telegram.alexContest.ContactsController;
-import org.telegram.alexContest.DialogObject;
-import org.telegram.alexContest.DocumentObject;
-import org.telegram.alexContest.DownloadController;
-import org.telegram.alexContest.Emoji;
-import org.telegram.alexContest.EmojiData;
-import org.telegram.alexContest.FileLoader;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.FlagSecureReason;
-import org.telegram.alexContest.ImageLoader;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.ImageReceiver;
-import org.telegram.alexContest.LanguageDetector;
-import org.telegram.alexContest.LiteMode;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MediaController;
-import org.telegram.alexContest.MediaDataController;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.MessagePreviewParams;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.MessagesStorage;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.NotificationsController;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.SecretChatHelper;
-import org.telegram.alexContest.SendMessagesHelper;
-import org.telegram.alexContest.SharedConfig;
-import org.telegram.alexContest.SvgHelper;
-import org.telegram.alexContest.TranslateController;
-import org.telegram.alexContest.UserConfig;
-import org.telegram.alexContest.UserObject;
-import org.telegram.alexContest.Utilities;
-import org.telegram.alexContest.VideoEditedInfo;
-import org.telegram.alexContest.browser.Browser;
-import org.telegram.alexContest.support.LongSparseIntArray;
-import org.telegram.alexContest.utils.PhotoUtilities;
-import org.telegram.alexContest.voip.VoIPService;
+import org.telegram.messenger.AccountInstance;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.BotWebViewVibrationEffect;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.ChatMessageSharedResources;
+import org.telegram.messenger.ChatMessagesMetadataController;
+import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.ChatThemeController;
+import org.telegram.messenger.CodeHighlighting;
+import org.telegram.messenger.ContactsController;
+import org.telegram.messenger.DialogObject;
+import org.telegram.messenger.DocumentObject;
+import org.telegram.messenger.DownloadController;
+import org.telegram.messenger.Emoji;
+import org.telegram.messenger.EmojiData;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.FlagSecureReason;
+import org.telegram.messenger.ImageLoader;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.ImageReceiver;
+import org.telegram.messenger.LanguageDetector;
+import org.telegram.messenger.LiteMode;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MediaController;
+import org.telegram.messenger.MediaDataController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.MessagePreviewParams;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.MessagesStorage;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.NotificationsController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.SecretChatHelper;
+import org.telegram.messenger.SendMessagesHelper;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.SvgHelper;
+import org.telegram.messenger.TranslateController;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.UserObject;
+import org.telegram.messenger.Utilities;
+import org.telegram.messenger.VideoEditedInfo;
+import org.telegram.messenger.browser.Browser;
+import org.telegram.messenger.support.LongSparseIntArray;
+import org.telegram.messenger.utils.PhotoUtilities;
+import org.telegram.messenger.voip.VoIPService;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
@@ -375,7 +376,6 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
     protected ChatActivityEnterView chatActivityEnterView;
     private ChatActivityEnterTopView chatActivityEnterTopView;
     private int chatActivityEnterViewAnimateFromTop;
-    private DelitionAnimator delitionAnimator;
     private boolean chatActivityEnterViewAnimateBeforeSending;
     private ActionBarMenuItem.Item timeItem2;
     private ActionBarMenu.LazyItem attachItem;
@@ -5753,9 +5753,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
 
         selectionReactionsOverlay = new ChatSelectionReactionMenuOverlay(this, context);
         contentView.addView(selectionReactionsOverlay, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
-        if (DelitionAnimator.checkVersion()) {
-            contentView.addView(delitionAnimator = new DelitionAnimator(context), LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
-        }
+
         animatingImageView = new ClippingImageView(context);
         animatingImageView.setVisibility(View.GONE);
         contentView.addView(animatingImageView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
@@ -20826,15 +20824,6 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         LongSparseArray<MessageObject.GroupedMessages> newGroups = null;
         LongSparseArray<Integer> newGroupsSizes = null;
         int size = markAsDeletedMessages.size();
-        final List<MessageObject> messageObjects = new ArrayList<>(markAsDeletedMessages.size());
-        for (int i = 0; i < size; i++) {
-            Integer mid = markAsDeletedMessages.get(i);
-            MessageObject obj = messagesDict[loadIndex].get(mid);
-            if (obj != null) {
-                messageObjects.add(obj);
-            }
-        }
-        chatAdapter.animateDeletionForMessageObjects(messageObjects);
         boolean updatedSelected = false;
         boolean updatedSelectedLast = false;
         boolean updateScheduled = false;
@@ -24003,9 +23992,6 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         }
         if (AvatarPreviewer.hasVisibleInstance()) {
             AvatarPreviewer.getInstance().close();
-        }
-        if (delitionAnimator != null) {
-            delitionAnimator.stopAnimation();
         }
     }
 
@@ -30277,23 +30263,6 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
             }
         }
 
-        public void animateDeletionForMessageObjects(List<MessageObject> messageObjects) {
-            int viewChildCount = chatListView.getChildCount();
-            List<ChatMessageCell> chatMessageCells = new ArrayList<>(messageObjects.size());
-            for (MessageObject messageObject : messageObjects) {
-                for (int i = 0; i < viewChildCount; i++) {
-                    View childView = chatListView.getChildAt(i);
-                    if (childView instanceof ChatMessageCell) {
-                        ChatMessageCell chatMessageCell = (ChatMessageCell) childView;
-                        if (chatMessageCell.getMessageObject() == messageObject) {
-                            chatMessageCells.add(chatMessageCell);
-                            break;
-                        }
-                    }
-                }
-            }
-            delitionAnimator.animate(chatMessageCells);
-        }
         @Override
         public void notifyItemRangeRemoved(int positionStart, int itemCount) {
             if (BuildVars.LOGS_ENABLED) {

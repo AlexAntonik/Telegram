@@ -29,9 +29,9 @@ import android.view.View;
 
 import androidx.core.content.ContextCompat;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.R;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.R;
 import org.telegram.ui.ActionBar.Theme;
 
 import java.util.ArrayList;

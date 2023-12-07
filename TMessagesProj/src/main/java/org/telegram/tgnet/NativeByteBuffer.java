@@ -1,7 +1,7 @@
 package org.telegram.tgnet;
 
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.FileLog;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

@@ -16,7 +16,7 @@ import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
 import android.view.animation.DecelerateInterpolator;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 public class BackDrawable extends Drawable {
 

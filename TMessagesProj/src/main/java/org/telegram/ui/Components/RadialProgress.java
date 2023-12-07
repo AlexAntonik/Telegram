@@ -18,7 +18,9 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
-import org.telegram.alexContest.AndroidUtilities;
+import com.google.android.exoplayer2.util.Log;
+
+import org.telegram.messenger.AndroidUtilities;
 import org.telegram.ui.ActionBar.Theme;
 
 public class RadialProgress {

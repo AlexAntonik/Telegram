@@ -2,7 +2,7 @@ package org.telegram.ui.Components;
 
 import android.animation.TimeAnimator;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 /**
  * Good for animations with a jank at the beginning.

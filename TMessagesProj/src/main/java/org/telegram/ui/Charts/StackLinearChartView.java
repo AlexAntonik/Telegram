@@ -6,7 +6,7 @@ import android.graphics.Matrix;
 import android.graphics.Path;
 import android.graphics.RectF;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Charts.data.ChartData;
 import org.telegram.ui.Charts.data.StackLinearChartData;

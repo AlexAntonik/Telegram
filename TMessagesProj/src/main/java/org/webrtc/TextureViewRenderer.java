@@ -11,9 +11,10 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.LiteMode;
-import org.telegram.alexContest.voip.VoIPService;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.LiteMode;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.voip.VoIPService;
 
 import java.util.concurrent.CountDownLatch;
 

@@ -25,8 +25,8 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.Arrays;
 
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.voip.VideoCapturerDevice;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.voip.VideoCapturerDevice;
 import org.webrtc.Logging;
 import org.webrtc.ThreadUtils;
 

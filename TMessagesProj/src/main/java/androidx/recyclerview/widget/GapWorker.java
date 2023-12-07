@@ -21,8 +21,8 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.core.os.TraceCompat;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FileLog;
 
 import java.util.ArrayList;
 import java.util.Arrays;

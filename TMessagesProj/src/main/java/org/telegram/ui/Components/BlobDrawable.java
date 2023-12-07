@@ -5,7 +5,8 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
 
-import org.telegram.alexContest.LiteMode;
+import org.telegram.messenger.LiteMode;
+import org.telegram.messenger.SharedConfig;
 
 import java.util.Random;
 

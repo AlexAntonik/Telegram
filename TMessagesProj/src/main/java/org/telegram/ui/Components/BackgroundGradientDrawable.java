@@ -12,9 +12,9 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.collection.ArrayMap;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ApplicationLoader;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.Utilities;
 
 import java.util.ArrayList;
 import java.util.List;

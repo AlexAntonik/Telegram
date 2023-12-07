@@ -29,12 +29,12 @@ import androidx.collection.LongSparseArray;
 import androidx.core.graphics.ColorUtils;
 import androidx.core.math.MathUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ImageReceiver;
-import org.telegram.alexContest.MediaDataController;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.UserConfig;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ImageReceiver;
+import org.telegram.messenger.MediaDataController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.R;
+import org.telegram.messenger.UserConfig;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.Premium.PremiumLockIconView;

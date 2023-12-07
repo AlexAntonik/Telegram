@@ -10,7 +10,7 @@ package org.telegram.tgnet;
 
 import android.util.SparseArray;
 
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.FileLog;
 
 public class TLClassStore {
     private SparseArray<Class> classStore;

@@ -11,8 +11,8 @@ package org.telegram.ui.Components;
 import android.graphics.*;
 import android.view.View;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.LocaleController;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.LocaleController;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.GroupCreateSectionCell;
 

@@ -1,8 +1,8 @@
 package org.telegram.ui.Components;
 
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
-import static org.telegram.alexContest.AndroidUtilities.dpf2;
+import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dpf2;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -11,6 +11,7 @@ import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
+import android.graphics.Xfermode;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -18,7 +19,7 @@ import android.view.Gravity;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 public class OptionsSpeedIconDrawable extends Drawable {
 

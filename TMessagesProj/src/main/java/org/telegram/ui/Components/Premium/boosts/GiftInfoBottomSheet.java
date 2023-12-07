@@ -7,11 +7,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.DialogObject;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.browser.Browser;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.DialogObject;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.browser.Browser;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.BaseFragment;

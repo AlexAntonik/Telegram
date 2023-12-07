@@ -3,13 +3,13 @@ package org.telegram.ui.Components;
 import android.graphics.Bitmap;
 import android.text.TextUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.DownloadController;
-import org.telegram.alexContest.FileLoader;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.UserConfig;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.DownloadController;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Cells.ChatMessageCell;
 

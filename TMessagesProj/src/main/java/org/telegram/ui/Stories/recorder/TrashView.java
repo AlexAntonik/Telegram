@@ -1,7 +1,7 @@
 package org.telegram.ui.Stories.recorder;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
-import static org.telegram.alexContest.AndroidUtilities.dpf2;
+import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dpf2;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,15 +9,21 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
+import android.graphics.RadialGradient;
+import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
+import android.text.Layout;
+import android.text.StaticLayout;
+import android.text.TextPaint;
 import android.view.Gravity;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.R;
+import org.checkerframework.checker.units.qual.A;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.R;
 import org.telegram.ui.Components.AnimatedFloat;
 import org.telegram.ui.Components.AnimatedTextView;
 import org.telegram.ui.Components.ButtonBounce;

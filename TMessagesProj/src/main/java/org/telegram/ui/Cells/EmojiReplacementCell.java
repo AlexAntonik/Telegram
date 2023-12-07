@@ -17,10 +17,10 @@ import android.view.Gravity;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.Emoji;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.UserConfig;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.Emoji;
+import org.telegram.messenger.R;
+import org.telegram.messenger.UserConfig;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AnimatedEmojiDrawable;
 import org.telegram.ui.Components.LayoutHelper;

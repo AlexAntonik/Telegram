@@ -5,10 +5,10 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.os.SystemClock;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.Utilities;
-import org.telegram.alexContest.voip.VoIPService;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.R;
+import org.telegram.messenger.Utilities;
+import org.telegram.messenger.voip.VoIPService;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.RLottieDrawable;
 import org.telegram.ui.Components.RLottieImageView;

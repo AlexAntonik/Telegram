@@ -1,6 +1,6 @@
 package org.telegram.ui.Stories;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dp;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -21,12 +21,13 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.BotWebViewVibrationEffect;
-import org.telegram.alexContest.FileRefController;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MediaDataController;
-import org.telegram.alexContest.R;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.BotWebViewVibrationEffect;
+import org.telegram.messenger.FileRefController;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MediaDataController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.RequestDelegate;
 import org.telegram.tgnet.TLObject;
@@ -37,6 +38,7 @@ import org.telegram.ui.Components.AnimatedEmojiSpan;
 import org.telegram.ui.Components.CubicBezierInterpolator;
 import org.telegram.ui.Components.EmojiPacksAlert;
 import org.telegram.ui.Components.LoadingDrawable;
+import org.telegram.ui.Components.StickersAlert;
 import org.telegram.ui.Components.TypefaceSpan;
 
 import java.util.ArrayList;

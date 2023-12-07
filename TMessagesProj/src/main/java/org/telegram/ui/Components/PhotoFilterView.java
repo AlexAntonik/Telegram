@@ -41,12 +41,12 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MediaController;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.SharedConfig;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MediaController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.AbstractSerializedData;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.BubbleActivity;

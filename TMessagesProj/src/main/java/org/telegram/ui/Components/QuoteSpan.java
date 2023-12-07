@@ -1,31 +1,42 @@
 package org.telegram.ui.Components;
 
+import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
+import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
+import android.os.Parcel;
 import android.text.Editable;
 import android.text.Layout;
+import android.text.ParcelableSpan;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextPaint;
+import android.text.TextUtils;
+import android.text.style.CharacterStyle;
 import android.text.style.LeadingMarginSpan;
 import android.text.style.LineHeightSpan;
 import android.text.style.MetricAffectingSpan;
+import android.text.style.ParagraphStyle;
+import android.text.style.ReplacementSpan;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ApplicationLoader;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.SharedConfig;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.R;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.TLRPC;
+import org.telegram.ui.ActionBar.Theme;
 
 import java.util.ArrayList;
 import java.util.HashMap;

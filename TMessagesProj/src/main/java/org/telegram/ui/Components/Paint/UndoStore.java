@@ -1,6 +1,6 @@
 package org.telegram.ui.Components.Paint;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 import java.util.ArrayList;
 import java.util.HashMap;

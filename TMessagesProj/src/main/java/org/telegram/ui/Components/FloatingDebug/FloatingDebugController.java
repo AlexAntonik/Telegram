@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import org.telegram.alexContest.SharedConfig;
+import org.telegram.messenger.SharedConfig;
 import org.telegram.ui.Components.AnimationProperties;
 import org.telegram.ui.LaunchActivity;
 

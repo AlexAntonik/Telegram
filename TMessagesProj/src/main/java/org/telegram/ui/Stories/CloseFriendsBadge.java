@@ -3,10 +3,14 @@ package org.telegram.ui.Stories;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.os.Build;
+import android.view.View;
 import android.widget.ImageView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.R;
+import androidx.annotation.RequiresApi;
+
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.R;
 import org.telegram.ui.Components.ScaleStateListAnimator;
 
 public class CloseFriendsBadge extends ImageView {

@@ -17,7 +17,7 @@ import android.os.SystemClock;
 import android.text.TextPaint;
 import android.view.View;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.Components.CubicBezierInterpolator;
 import org.telegram.ui.Components.ProfileGalleryView;

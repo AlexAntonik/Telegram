@@ -12,11 +12,11 @@ import android.view.View;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ChatObject;
-import org.telegram.alexContest.LiteMode;
-import org.telegram.alexContest.Utilities;
-import org.telegram.alexContest.voip.VoIPService;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.LiteMode;
+import org.telegram.messenger.Utilities;
+import org.telegram.messenger.voip.VoIPService;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 

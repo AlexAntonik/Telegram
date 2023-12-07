@@ -12,8 +12,8 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FileLog;
 
 import java.util.ArrayList;
 

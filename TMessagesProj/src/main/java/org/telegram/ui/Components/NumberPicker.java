@@ -40,8 +40,8 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.Utilities;
 import org.telegram.ui.ActionBar.Theme;
 
 import java.util.Locale;

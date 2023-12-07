@@ -21,16 +21,16 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ChatObject;
-import org.telegram.alexContest.ContactsController;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.UserConfig;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.ContactsController;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.R;
+import org.telegram.messenger.UserConfig;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
@@ -401,7 +401,7 @@ public class MessageSeenView extends FrameLayout {
             updateStatus(false);
 
             if (object != null) {
-                avatarDrawable.setInfo(object);
+                avatarDrawable.setInfo(currentAccount, object);
                 ImageLocation imageLocation = ImageLocation.getForUserOrChat(object, ImageLocation.TYPE_SMALL);
                 avatarImageView.setImage(imageLocation, "50_50", avatarDrawable, object);
                 nameView.setText(ContactsController.formatName(object));

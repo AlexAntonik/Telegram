@@ -10,7 +10,7 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.view.View;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 public class SubstringLayoutAnimator {
 

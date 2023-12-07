@@ -13,9 +13,9 @@ import android.opengl.GLES20;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.alexContest.BotWebViewVibrationEffect;
-import org.telegram.alexContest.DispatchQueue;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.BotWebViewVibrationEffect;
+import org.telegram.messenger.DispatchQueue;
+import org.telegram.messenger.Utilities;
 import org.telegram.ui.Components.BlurringShader;
 import org.telegram.ui.Components.CubicBezierInterpolator;
 import org.telegram.ui.Components.Size;

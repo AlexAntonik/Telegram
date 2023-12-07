@@ -18,7 +18,7 @@ import android.os.Build;
 
 import androidx.annotation.Nullable;
 
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.FileLog;
 
 import java.util.ArrayList;
 import java.util.Collections;

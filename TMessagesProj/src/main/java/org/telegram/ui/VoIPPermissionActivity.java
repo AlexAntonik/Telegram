@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.voip.VoIPService;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.voip.VoIPService;
 import org.telegram.ui.Components.voip.VoIPHelper;
 
 import java.util.ArrayList;

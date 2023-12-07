@@ -2,7 +2,7 @@ package org.telegram.ui.Storage;
 
 import android.util.LongSparseArray;
 
-import org.telegram.alexContest.MessageObject;
+import org.telegram.messenger.MessageObject;
 import org.telegram.ui.CacheControlActivity;
 
 import java.io.File;

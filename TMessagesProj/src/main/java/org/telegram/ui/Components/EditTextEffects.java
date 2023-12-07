@@ -13,12 +13,14 @@ import android.os.Looper;
 import android.text.Editable;
 import android.text.Layout;
 import android.text.Spannable;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.widget.EditText;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FileLog;
+import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.spoilers.SpoilerEffect;
 import org.telegram.ui.Components.spoilers.SpoilersClickDetector;
 

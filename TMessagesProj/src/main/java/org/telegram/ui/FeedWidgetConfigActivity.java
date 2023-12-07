@@ -7,9 +7,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
-import org.telegram.alexContest.AccountInstance;
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FeedWidgetProvider;
+import org.telegram.messenger.AccountInstance;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FeedWidgetProvider;
 
 public class FeedWidgetConfigActivity extends ExternalActionActivity {
 
