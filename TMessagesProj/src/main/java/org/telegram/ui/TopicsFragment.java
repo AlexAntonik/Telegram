@@ -52,23 +52,23 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSmoothScrollerCustom;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.alexContest.AccountInstance;
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.AnimationNotificationsLocker;
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.ChatObject;
-import org.telegram.alexContest.DialogObject;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.MessagesStorage;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.NotificationsController;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.SharedConfig;
-import org.telegram.alexContest.TopicsController;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AccountInstance;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.AnimationNotificationsLocker;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.DialogObject;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.MessagesStorage;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.NotificationsController;
+import org.telegram.messenger.R;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.TopicsController;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
@@ -130,6 +130,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.concurrent.CountDownLatch;
 
 public class TopicsFragment extends BaseFragment implements NotificationCenter.NotificationCenterDelegate, ChatActivityInterface, RightSlidingDialogContainer.BaseFragmentWithFullscreen {
 
@@ -191,6 +192,7 @@ public class TopicsFragment extends BaseFragment implements NotificationCenter.N
     private static final int show_id = 13;
 
     private boolean removeFragmentOnTransitionEnd;
+    private boolean finishDialogRightSlidingPreviewOnTransitionEnd;
     TLRPC.ChatFull chatFull;
     boolean canShowCreateTopic;
     private UnreadCounterTextView bottomOverlayChatText;
@@ -285,6 +287,32 @@ public class TopicsFragment extends BaseFragment implements NotificationCenter.N
         openedForReply = arguments.getBoolean("reply_to", false);
         topicsController = getMessagesController().getTopicsController();
         canShowProgress = !getUserConfig().getPreferences().getBoolean("topics_end_reached_" + chatId, false);
+    }
+
+    public static BaseFragment getTopicsOrChat(BaseFragment parentFragment, Bundle args) {
+        return getTopicsOrChat(parentFragment.getMessagesController(), parentFragment.getMessagesStorage(), args);
+    }
+
+    public static BaseFragment getTopicsOrChat(LaunchActivity launchActivity, Bundle args) {
+        return getTopicsOrChat(MessagesController.getInstance(launchActivity.currentAccount), MessagesStorage.getInstance(launchActivity.currentAccount), args);
+    }
+
+    private static BaseFragment getTopicsOrChat(MessagesController messagesController, MessagesStorage messagesStorage, Bundle args) {
+        long chatId = args.getLong("chat_id");
+        if (chatId != 0L) {
+            TLRPC.Dialog dialog = messagesController.getDialog(-chatId);
+            if (dialog != null && dialog.view_forum_as_messages) {
+                return new ChatActivity(args);
+            }
+            TLRPC.ChatFull chatFull = messagesController.getChatFull(chatId);
+            if (chatFull == null) {
+                chatFull = messagesStorage.loadChatInfo(chatId, true, new CountDownLatch(1), false, false);
+            }
+            if (chatFull != null && chatFull.view_forum_as_messages) {
+                return new ChatActivity(args);
+            }
+        }
+        return new TopicsFragment(args);
     }
 
     public static void prepareToSwitchAnimation(ChatActivity chatActivity) {
@@ -507,7 +535,13 @@ public class TopicsFragment extends BaseFragment implements NotificationCenter.N
                 TLRPC.TL_forumTopic topic;
                 switch (id) {
                     case toggle_id:
-                        switchToChat(false);
+                        getMessagesController().getTopicsController().toggleViewForumAsMessages(chatId, true);
+                        finishDialogRightSlidingPreviewOnTransitionEnd = true;
+                        Bundle bundle = new Bundle();
+                        bundle.putLong("chat_id", chatId);
+                        ChatActivity chatActivity = new ChatActivity(bundle);
+                        chatActivity.setSwitchFromTopics(true);
+                        presentFragment(chatActivity);
                         break;
                     case add_member_id:
                         TLRPC.ChatFull chatFull = getMessagesController().getChatFull(chatId);
@@ -1393,7 +1427,7 @@ public class TopicsFragment extends BaseFragment implements NotificationCenter.N
                 parentAvatarImageView = new BackupImageView(getContext());
                 parentAvatarDrawable = new AvatarDrawable();
                 parentAvatarImageView.setRoundRadius(AndroidUtilities.dp(16));
-                parentAvatarDrawable.setInfo(getCurrentChat());
+                parentAvatarDrawable.setInfo(currentAccount, getCurrentChat());
                 parentAvatarImageView.setForUserOrChat(getCurrentChat(), parentAvatarDrawable);
             }
             parentDialogsActivity.getSearchItem().setSearchPaddingStart(52);
@@ -3786,10 +3820,19 @@ public class TopicsFragment extends BaseFragment implements NotificationCenter.N
 
         notificationsLocker.unlock();
 
-        if (!isOpen && (opnendForSelect && removeFragmentOnTransitionEnd)) {
-            removeSelfFromStack();
-            if (dialogsActivity != null) {
-                dialogsActivity.removeSelfFromStack();
+        if (!isOpen) {
+            if (opnendForSelect && removeFragmentOnTransitionEnd) {
+                removeSelfFromStack();
+                if (dialogsActivity != null) {
+                    dialogsActivity.removeSelfFromStack();
+                }
+            } else if (finishDialogRightSlidingPreviewOnTransitionEnd) {
+                removeSelfFromStack();
+                if (parentDialogsActivity != null && parentDialogsActivity.rightSlidingDialogContainer != null) {
+                    if (parentDialogsActivity.rightSlidingDialogContainer.hasFragment()) {
+                        parentDialogsActivity.rightSlidingDialogContainer.finishPreview();
+                    }
+                }
             }
         }
     }

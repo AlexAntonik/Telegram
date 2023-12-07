@@ -21,14 +21,14 @@ import android.widget.TextView;
 
 import androidx.core.widget.NestedScrollView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.DocumentObject;
-import org.telegram.alexContest.FileLoader;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.SvgHelper;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.DocumentObject;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.R;
+import org.telegram.messenger.SvgHelper;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.BottomSheet;
 import org.telegram.ui.ActionBar.Theme;

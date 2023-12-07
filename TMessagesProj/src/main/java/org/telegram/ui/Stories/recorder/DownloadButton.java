@@ -1,8 +1,8 @@
 package org.telegram.ui.Stories.recorder;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
-import static org.telegram.alexContest.AndroidUtilities.dpf2;
-import static org.telegram.alexContest.AndroidUtilities.lerp;
+import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dpf2;
+import static org.telegram.messenger.AndroidUtilities.lerp;
 
 import android.Manifest;
 import android.app.Activity;
@@ -20,6 +20,7 @@ import android.os.Build;
 import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,18 +30,20 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MediaController;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MediaController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.R;
+import org.telegram.messenger.Utilities;
+import org.telegram.messenger.VideoEncodingService;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AnimatedFloat;
+import org.telegram.ui.Components.BulletinFactory;
 import org.telegram.ui.Components.ButtonBounce;
 import org.telegram.ui.Components.CircularProgressDrawable;
 import org.telegram.ui.Components.CubicBezierInterpolator;
@@ -341,6 +344,7 @@ public class DownloadButton extends ImageView {
 
                     if (finalSize > 0) {
                         onDone.run();
+                        VideoEncodingService.stop();
                         stop(false);
                     }
                 }

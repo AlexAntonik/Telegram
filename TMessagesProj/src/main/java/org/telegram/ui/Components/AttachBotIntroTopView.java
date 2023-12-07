@@ -11,12 +11,12 @@ import android.view.View;
 
 import androidx.core.content.ContextCompat;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.DocumentObject;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.ImageReceiver;
-import org.telegram.alexContest.MediaDataController;
-import org.telegram.alexContest.R;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.DocumentObject;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.ImageReceiver;
+import org.telegram.messenger.MediaDataController;
+import org.telegram.messenger.R;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 

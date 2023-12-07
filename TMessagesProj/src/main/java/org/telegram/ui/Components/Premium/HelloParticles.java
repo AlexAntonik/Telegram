@@ -9,9 +9,9 @@ import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.SharedConfig;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.Utilities;
 
 import java.util.ArrayList;
 import java.util.HashMap;

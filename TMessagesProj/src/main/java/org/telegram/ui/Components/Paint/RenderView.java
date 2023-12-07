@@ -13,10 +13,10 @@ import android.view.MotionEvent;
 import android.view.TextureView;
 import android.view.View;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.DispatchQueue;
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.DispatchQueue;
+import org.telegram.messenger.FileLog;
 import org.telegram.ui.Components.BlurringShader;
 import org.telegram.ui.Components.Size;
 

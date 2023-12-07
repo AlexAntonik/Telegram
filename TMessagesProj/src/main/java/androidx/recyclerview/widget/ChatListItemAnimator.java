@@ -14,11 +14,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
 
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.ImageReceiver;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.SharedConfig;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.ImageReceiver;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.SharedConfig;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.BotHelpCell;
 import org.telegram.ui.Cells.ChatActionCell;
@@ -37,7 +37,7 @@ import java.util.List;
 
 public class ChatListItemAnimator extends DefaultItemAnimator {
 
-    public static final long DEFAULT_DURATION = 400;
+    public static final long DEFAULT_DURATION = 250;
     public static final Interpolator DEFAULT_INTERPOLATOR = new CubicBezierInterpolator(0.19919472913616398, 0.010644531250000006, 0.27920937042459737, 0.91025390625);
 
     private final ChatActivity activity;

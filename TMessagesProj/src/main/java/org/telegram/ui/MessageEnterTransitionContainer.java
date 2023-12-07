@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.telegram.alexContest.NotificationCenter;
+import org.telegram.messenger.NotificationCenter;
 
 import java.util.ArrayList;
 

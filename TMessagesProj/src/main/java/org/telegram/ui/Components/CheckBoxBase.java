@@ -1,6 +1,6 @@
 package org.telegram.ui.Components;
 
-import static org.telegram.alexContest.AndroidUtilities.lerp;
+import static org.telegram.messenger.AndroidUtilities.lerp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -22,9 +22,9 @@ import android.view.View;
 import androidx.annotation.Keep;
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.GenericProvider;
-import org.telegram.alexContest.LocaleController;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.GenericProvider;
+import org.telegram.messenger.LocaleController;
 import org.telegram.ui.ActionBar.Theme;
 
 public class CheckBoxBase {

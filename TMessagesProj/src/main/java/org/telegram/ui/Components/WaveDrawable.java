@@ -11,8 +11,9 @@ import android.view.View;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.LiteMode;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.LiteMode;
+import org.telegram.messenger.SharedConfig;
 
 public class WaveDrawable {
 

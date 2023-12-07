@@ -16,9 +16,9 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.view.View;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.ImageReceiver;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.ImageReceiver;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 

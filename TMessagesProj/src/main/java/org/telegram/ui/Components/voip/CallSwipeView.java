@@ -22,9 +22,9 @@ import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.FileLog;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.FileLog;
 
 import java.util.ArrayList;
 

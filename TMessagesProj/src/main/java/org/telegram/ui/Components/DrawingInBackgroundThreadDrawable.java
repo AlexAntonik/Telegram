@@ -5,12 +5,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.DispatchQueue;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.SharedConfig;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.DispatchQueue;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.SharedConfig;
 import org.telegram.ui.ActionBar.Theme;
 
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
 package org.telegram.ui.Components.Premium.boosts;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
-import static org.telegram.alexContest.AndroidUtilities.translitSafe;
+import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.translitSafe;
 
 import android.annotation.SuppressLint;
 import android.content.res.Configuration;
@@ -19,12 +19,12 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearSmoothScrollerCustom;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ChatObject;
-import org.telegram.alexContest.DialogObject;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.R;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.DialogObject;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.R;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.BaseFragment;

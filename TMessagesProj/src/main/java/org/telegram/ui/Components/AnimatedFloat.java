@@ -7,7 +7,7 @@ import android.view.View;
 
 import androidx.core.math.MathUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 public class AnimatedFloat {
 

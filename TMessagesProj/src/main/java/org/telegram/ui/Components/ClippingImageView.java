@@ -20,9 +20,9 @@ import android.graphics.Shader;
 import androidx.annotation.Keep;
 import android.view.View;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.ImageReceiver;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.ImageReceiver;
 
 import java.util.Arrays;
 

@@ -13,8 +13,9 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 public class SizeNotifierFrameLayoutPhoto extends SizeNotifierFrameLayout {
 

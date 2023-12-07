@@ -14,14 +14,14 @@ import android.view.animation.Interpolator;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.alexContest.AccountInstance;
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.DialogObject;
-import org.telegram.alexContest.ImageReceiver;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.UserConfig;
-import org.telegram.alexContest.voip.VoIPService;
+import org.telegram.messenger.AccountInstance;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.DialogObject;
+import org.telegram.messenger.ImageReceiver;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.voip.VoIPService;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;

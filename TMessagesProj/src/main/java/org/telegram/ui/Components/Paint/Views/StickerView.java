@@ -3,13 +3,14 @@ package org.telegram.ui.Components.Paint.Views;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.RectF;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.FileLoader;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.ImageReceiver;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.ImageReceiver;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.AnimatedFileDrawable;
 import org.telegram.ui.Components.AnimatedFloat;

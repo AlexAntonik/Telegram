@@ -19,10 +19,10 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.ImageReceiver;
-import org.telegram.alexContest.SecureDocument;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.ImageReceiver;
+import org.telegram.messenger.SecureDocument;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.TLObject;
 
 public class BackupImageView extends View {

@@ -8,8 +8,8 @@
 
 package org.telegram.ui.ActionBar;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
-import static org.telegram.alexContest.AndroidUtilities.dpf2;
+import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dpf2;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -77,26 +77,26 @@ import androidx.core.math.MathUtils;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ApplicationLoader;
-import org.telegram.alexContest.Bitmaps;
-import org.telegram.alexContest.BuildVars;
-import org.telegram.alexContest.FileLoader;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.ImageLocation;
-import org.telegram.alexContest.LiteMode;
-import org.telegram.alexContest.LocaleController;
-import org.telegram.alexContest.MediaController;
-import org.telegram.alexContest.MediaDataController;
-import org.telegram.alexContest.MessageObject;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.SharedConfig;
-import org.telegram.alexContest.SvgHelper;
-import org.telegram.alexContest.UserConfig;
-import org.telegram.alexContest.Utilities;
-import org.telegram.alexContest.time.SunDate;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ApplicationLoader;
+import org.telegram.messenger.Bitmaps;
+import org.telegram.messenger.BuildVars;
+import org.telegram.messenger.FileLoader;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.ImageLocation;
+import org.telegram.messenger.LiteMode;
+import org.telegram.messenger.LocaleController;
+import org.telegram.messenger.MediaController;
+import org.telegram.messenger.MediaDataController;
+import org.telegram.messenger.MessageObject;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.R;
+import org.telegram.messenger.SharedConfig;
+import org.telegram.messenger.SvgHelper;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.Utilities;
+import org.telegram.messenger.time.SunDate;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.SerializedData;
 import org.telegram.tgnet.TLRPC;

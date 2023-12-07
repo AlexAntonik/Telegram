@@ -1,6 +1,6 @@
 package org.telegram.ui.Components;
 
-import static org.telegram.alexContest.AndroidUtilities.dp;
+import static org.telegram.messenger.AndroidUtilities.dp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -28,15 +28,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import org.telegram.SQLite.SQLiteCursor;
 import org.telegram.SQLite.SQLiteDatabase;
 import org.telegram.SQLite.SQLitePreparedStatement;
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.CacheFetcher;
-import org.telegram.alexContest.FileLog;
-import org.telegram.alexContest.LiteMode;
-import org.telegram.alexContest.MessagesStorage;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.R;
-import org.telegram.alexContest.UserConfig;
-import org.telegram.alexContest.Utilities;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.CacheFetcher;
+import org.telegram.messenger.FileLog;
+import org.telegram.messenger.LiteMode;
+import org.telegram.messenger.MessagesStorage;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.R;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.Utilities;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.NativeByteBuffer;
 import org.telegram.tgnet.TLObject;

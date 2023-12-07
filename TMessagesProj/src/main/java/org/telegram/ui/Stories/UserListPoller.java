@@ -2,13 +2,13 @@ package org.telegram.ui.Stories;
 
 import android.view.View;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.ChatObject;
-import org.telegram.alexContest.MessagesController;
-import org.telegram.alexContest.MessagesStorage;
-import org.telegram.alexContest.NotificationCenter;
-import org.telegram.alexContest.UserConfig;
-import org.telegram.alexContest.support.LongSparseLongArray;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.ChatObject;
+import org.telegram.messenger.MessagesController;
+import org.telegram.messenger.MessagesStorage;
+import org.telegram.messenger.NotificationCenter;
+import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.support.LongSparseLongArray;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.tgnet.tl.TL_stories;

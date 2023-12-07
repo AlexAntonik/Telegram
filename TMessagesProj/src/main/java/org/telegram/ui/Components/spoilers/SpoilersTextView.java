@@ -10,10 +10,11 @@ import android.graphics.Rect;
 import android.graphics.Region;
 import android.text.Layout;
 import android.text.Spanned;
+import android.text.StaticLayout;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 import org.telegram.ui.Cells.TextSelectionHelper;
 
 import java.util.ArrayList;

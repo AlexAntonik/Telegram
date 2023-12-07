@@ -17,8 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.alexContest.AndroidUtilities;
-import org.telegram.alexContest.SvgHelper;
+import org.telegram.messenger.AndroidUtilities;
+import org.telegram.messenger.SvgHelper;
 
 public class CellFlickerDrawable {
 

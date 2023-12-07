@@ -1,6 +1,6 @@
 package org.telegram.ui.Charts.view_data;
 
-import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.messenger.AndroidUtilities;
 
 public class ChartHorizontalLinesData {
 
