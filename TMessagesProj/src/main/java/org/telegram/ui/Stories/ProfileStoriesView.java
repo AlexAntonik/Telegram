@@ -1,9 +1,9 @@
 package org.telegram.ui.Stories;
 
-import static org.telegram.messenger.AndroidUtilities.dp;
-import static org.telegram.messenger.AndroidUtilities.dpf2;
-import static org.telegram.messenger.AndroidUtilities.lerp;
-import static org.telegram.messenger.Utilities.clamp;
+import static org.telegram.alexContest.AndroidUtilities.dp;
+import static org.telegram.alexContest.AndroidUtilities.dpf2;
+import static org.telegram.alexContest.AndroidUtilities.lerp;
+import static org.telegram.alexContest.Utilities.clamp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -29,14 +29,14 @@ import androidx.core.graphics.ColorUtils;
 
 import com.google.zxing.common.detector.MathUtils;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ImageReceiver;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.SharedConfig;
-import org.telegram.messenger.UserConfig;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ImageReceiver;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.SharedConfig;
+import org.telegram.alexContest.UserConfig;
+import org.telegram.alexContest.Utilities;
 import org.telegram.tgnet.tl.TL_stories;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.AnimatedFloat;

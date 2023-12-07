@@ -7,15 +7,13 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.view.View;
 
-import com.google.android.exoplayer2.util.Log;
-
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.DownloadController;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.ImageReceiver;
-import org.telegram.messenger.MessagesStorage;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.DownloadController;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.ImageReceiver;
+import org.telegram.alexContest.MessagesStorage;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.R;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.RLottieDrawable;
 

@@ -7,10 +7,10 @@ import android.graphics.PorterDuffColorFilter;
 import android.view.Gravity;
 import android.widget.ImageView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.Emoji;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.R;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.Emoji;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.R;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.LayoutHelper;

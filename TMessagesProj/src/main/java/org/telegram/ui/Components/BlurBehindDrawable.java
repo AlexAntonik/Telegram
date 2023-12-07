@@ -10,10 +10,10 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.DispatchQueue;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.DispatchQueue;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.Utilities;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.ChatActivity;
 

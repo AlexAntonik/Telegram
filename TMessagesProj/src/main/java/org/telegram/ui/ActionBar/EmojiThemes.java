@@ -8,15 +8,15 @@ import android.graphics.drawable.BitmapDrawable;
 import android.util.Pair;
 import android.util.SparseIntArray;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.ChatThemeController;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.ImageLoader;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.ImageReceiver;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ApplicationLoader;
+import org.telegram.alexContest.ChatThemeController;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.ImageLoader;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.ImageReceiver;
+import org.telegram.alexContest.Utilities;
 import org.telegram.tgnet.ResultCallback;
 import org.telegram.tgnet.TLRPC;
 

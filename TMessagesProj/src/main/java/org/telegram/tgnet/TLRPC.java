@@ -16,13 +16,13 @@ import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.telegram.messenger.BuildVars;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.ImageLoader;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.SvgHelper;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.BuildVars;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.ImageLoader;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.SvgHelper;
+import org.telegram.alexContest.Utilities;
 import org.telegram.tgnet.tl.TL_stories;
 import org.telegram.ui.Stories.MessageMediaStoryFull;
 import org.telegram.ui.Stories.MessageMediaStoryFull_old;

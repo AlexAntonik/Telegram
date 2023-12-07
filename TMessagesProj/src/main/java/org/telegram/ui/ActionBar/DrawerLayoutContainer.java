@@ -25,7 +25,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
-import android.util.Log;
 import android.view.DisplayCutout;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -41,11 +40,11 @@ import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.BuildVars;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.R;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.BuildVars;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.Utilities;
 
 public class DrawerLayoutContainer extends FrameLayout {
 

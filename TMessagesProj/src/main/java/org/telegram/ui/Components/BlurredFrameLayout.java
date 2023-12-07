@@ -10,8 +10,8 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.SharedConfig;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.SharedConfig;
 
 public class BlurredFrameLayout extends FrameLayout {
 

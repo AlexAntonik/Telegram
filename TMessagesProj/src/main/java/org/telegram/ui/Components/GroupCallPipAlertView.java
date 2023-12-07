@@ -21,14 +21,14 @@ import android.widget.TextView;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ChatObject;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
-import org.telegram.messenger.voip.VoIPService;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ChatObject;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.voip.VoIPService;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.voip.VoIPButtonsLayout;
 import org.telegram.ui.Components.voip.VoIPToggleButton;

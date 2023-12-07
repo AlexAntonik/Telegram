@@ -26,20 +26,17 @@ import android.os.Build;
 import android.os.SystemClock;
 
 import androidx.annotation.Keep;
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.graphics.ColorUtils;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 
 import android.text.Editable;
 import android.text.Layout;
-import android.text.Selection;
 import android.text.Spanned;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.ActionMode;
 import android.view.Gravity;
 import android.view.Menu;
@@ -48,18 +45,15 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.accessibility.AccessibilityNodeInfo;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.common.primitives.Chars;
-
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.BuildVars;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.R;
-import org.telegram.messenger.Utilities;
-import org.telegram.messenger.XiaomiUtilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.BuildVars;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.Utilities;
+import org.telegram.alexContest.XiaomiUtilities;
 import org.telegram.ui.ActionBar.FloatingActionMode;
 import org.telegram.ui.ActionBar.FloatingToolbar;
 import org.telegram.ui.ActionBar.Theme;

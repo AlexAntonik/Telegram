@@ -14,8 +14,8 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.text.Layout;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.LiteMode;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.LiteMode;
 
 public class LinkPath extends Path {
 

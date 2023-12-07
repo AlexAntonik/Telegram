@@ -25,16 +25,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.common.collect.Sets;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
-import org.telegram.messenger.TranslateController;
-import org.telegram.messenger.UserConfig;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ApplicationLoader;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.TranslateController;
+import org.telegram.alexContest.UserConfig;
+import org.telegram.alexContest.Utilities;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.ActionBarMenu;
 import org.telegram.ui.ActionBar.ActionBarMenuItem;

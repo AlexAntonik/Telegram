@@ -46,16 +46,16 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ChatObject;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
-import org.telegram.messenger.Utilities;
-import org.telegram.messenger.browser.Browser;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ChatObject;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.Utilities;
+import org.telegram.alexContest.browser.Browser;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.ActionBar;

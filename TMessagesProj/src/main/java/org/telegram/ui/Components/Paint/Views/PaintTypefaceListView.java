@@ -11,8 +11,8 @@ import androidx.core.util.Consumer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.NotificationCenter;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.NotificationCenter;
 import org.telegram.ui.Components.Paint.PaintTypeface;
 import org.telegram.ui.Components.RecyclerListView;
 

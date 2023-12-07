@@ -16,7 +16,7 @@ import android.os.SystemClock;
 
 import androidx.annotation.Nullable;
 
-import org.telegram.messenger.BuildVars;
+import org.telegram.alexContest.BuildVars;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;

@@ -3,7 +3,7 @@ package org.telegram.ui.Cells;
 import android.content.Context;
 import android.view.View;
 
-import org.telegram.messenger.AndroidUtilities;
+import org.telegram.alexContest.AndroidUtilities;
 
 public class FixedHeightEmptyCell extends View {
 

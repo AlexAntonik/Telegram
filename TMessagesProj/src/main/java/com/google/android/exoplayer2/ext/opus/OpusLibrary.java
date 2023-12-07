@@ -18,9 +18,8 @@ package com.google.android.exoplayer2.ext.opus;
 import androidx.annotation.Nullable;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlayerLibraryInfo;
-import com.google.android.exoplayer2.util.LibraryLoader;
 
-import org.telegram.messenger.NativeLoader;
+import org.telegram.alexContest.NativeLoader;
 
 /** Configures and queries the underlying native library. */
 public final class OpusLibrary {

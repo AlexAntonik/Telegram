@@ -17,9 +17,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.OvershootInterpolator;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.R;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.R;
 import org.telegram.ui.ActionBar.Theme;
 
 import java.util.regex.Matcher;

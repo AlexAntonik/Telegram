@@ -23,12 +23,12 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.messenger.AccountInstance;
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ChatObject;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.UserObject;
+import org.telegram.alexContest.AccountInstance;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ChatObject;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.UserObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Components.voip.GroupCallMiniTextureView;

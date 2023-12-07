@@ -17,12 +17,12 @@ import android.view.Gravity;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ChatObject;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.R;
-import org.telegram.messenger.UserConfig;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ChatObject;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.UserConfig;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.SimpleTextView;
 import org.telegram.ui.ActionBar.Theme;

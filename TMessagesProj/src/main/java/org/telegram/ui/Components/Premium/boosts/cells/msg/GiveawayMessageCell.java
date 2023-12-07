@@ -1,14 +1,13 @@
 package org.telegram.ui.Components.Premium.boosts.cells.msg;
 
-import static org.telegram.messenger.AndroidUtilities.dp;
-import static org.telegram.messenger.AndroidUtilities.replaceTags;
-import static org.telegram.messenger.LocaleController.formatPluralString;
-import static org.telegram.messenger.LocaleController.formatPluralStringComma;
-import static org.telegram.messenger.LocaleController.formatString;
-import static org.telegram.messenger.LocaleController.getString;
+import static org.telegram.alexContest.AndroidUtilities.dp;
+import static org.telegram.alexContest.AndroidUtilities.replaceTags;
+import static org.telegram.alexContest.LocaleController.formatPluralString;
+import static org.telegram.alexContest.LocaleController.formatPluralStringComma;
+import static org.telegram.alexContest.LocaleController.formatString;
+import static org.telegram.alexContest.LocaleController.getString;
 
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
@@ -29,18 +28,18 @@ import android.view.SoundEffectConstants;
 
 import androidx.annotation.NonNull;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.DocumentObject;
-import org.telegram.messenger.Emoji;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.ImageReceiver;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MediaDataController;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SvgHelper;
-import org.telegram.messenger.UserConfig;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.DocumentObject;
+import org.telegram.alexContest.Emoji;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.ImageReceiver;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.MediaDataController;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.SvgHelper;
+import org.telegram.alexContest.UserConfig;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.ChatMessageCell;

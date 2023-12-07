@@ -1,7 +1,7 @@
 package org.telegram.ui.Stories.recorder;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.Utilities;
 
 public class FfmpegAudioWaveformLoader {
 

@@ -84,45 +84,45 @@ import com.google.firebase.appindexing.FirebaseUserActions;
 import com.google.firebase.appindexing.builders.AssistActionBuilder;
 
 import org.telegram.PhoneFormat.PhoneFormat;
-import org.telegram.messenger.AccountInstance;
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.AutoDeleteMediaTask;
-import org.telegram.messenger.BackupAgent;
-import org.telegram.messenger.BotWebViewVibrationEffect;
-import org.telegram.messenger.BuildVars;
-import org.telegram.messenger.ChannelBoostsController;
-import org.telegram.messenger.ChatObject;
-import org.telegram.messenger.ContactsController;
-import org.telegram.messenger.ContactsLoadingObserver;
-import org.telegram.messenger.DialogObject;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.FingerprintController;
-import org.telegram.messenger.FlagSecureReason;
-import org.telegram.messenger.GenericProvider;
-import org.telegram.messenger.LiteMode;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.LocationController;
-import org.telegram.messenger.MediaController;
-import org.telegram.messenger.MediaDataController;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.MessagesController;
-import org.telegram.messenger.MessagesStorage;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.NotificationsController;
-import org.telegram.messenger.PushListenerController;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SendMessagesHelper;
-import org.telegram.messenger.SharedConfig;
-import org.telegram.messenger.TopicsController;
-import org.telegram.messenger.UserConfig;
-import org.telegram.messenger.UserObject;
-import org.telegram.messenger.Utilities;
-import org.telegram.messenger.browser.Browser;
-import org.telegram.messenger.voip.VideoCapturerDevice;
-import org.telegram.messenger.voip.VoIPPendingCall;
-import org.telegram.messenger.voip.VoIPService;
+import org.telegram.alexContest.AccountInstance;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.ApplicationLoader;
+import org.telegram.alexContest.AutoDeleteMediaTask;
+import org.telegram.alexContest.BackupAgent;
+import org.telegram.alexContest.BotWebViewVibrationEffect;
+import org.telegram.alexContest.BuildVars;
+import org.telegram.alexContest.ChannelBoostsController;
+import org.telegram.alexContest.ChatObject;
+import org.telegram.alexContest.ContactsController;
+import org.telegram.alexContest.ContactsLoadingObserver;
+import org.telegram.alexContest.DialogObject;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.FingerprintController;
+import org.telegram.alexContest.FlagSecureReason;
+import org.telegram.alexContest.GenericProvider;
+import org.telegram.alexContest.LiteMode;
+import org.telegram.alexContest.LocaleController;
+import org.telegram.alexContest.LocationController;
+import org.telegram.alexContest.MediaController;
+import org.telegram.alexContest.MediaDataController;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.MessagesController;
+import org.telegram.alexContest.MessagesStorage;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.NotificationsController;
+import org.telegram.alexContest.PushListenerController;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.SendMessagesHelper;
+import org.telegram.alexContest.SharedConfig;
+import org.telegram.alexContest.TopicsController;
+import org.telegram.alexContest.UserConfig;
+import org.telegram.alexContest.UserObject;
+import org.telegram.alexContest.Utilities;
+import org.telegram.alexContest.browser.Browser;
+import org.telegram.alexContest.voip.VideoCapturerDevice;
+import org.telegram.alexContest.voip.VoIPPendingCall;
+import org.telegram.alexContest.voip.VoIPService;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
@@ -1880,7 +1880,7 @@ public class LaunchActivity extends BasePermissionsActivity implements INavigati
                     if (error) {
                         Toast.makeText(this, "Unsupported content", Toast.LENGTH_SHORT).show();
                     }
-                } else if ("org.telegram.messenger.CREATE_STICKER_PACK".equals(intent.getAction())) {
+                } else if ("org.telegram.alexContest.CREATE_STICKER_PACK".equals(intent.getAction())) {
                     try {
                         importingStickers = intent.getParcelableArrayListExtra(Intent.EXTRA_STREAM);
                         importingStickersEmoji = intent.getStringArrayListExtra("STICKER_EMOJIS");
@@ -2717,9 +2717,9 @@ public class LaunchActivity extends BasePermissionsActivity implements INavigati
                                             NotificationCenter.getInstance(intentAccount[0]).postNotificationName(NotificationCenter.closeChats);
                                             push_user_id = userId;
                                             String mimeType = cursor.getString(cursor.getColumnIndex(ContactsContract.Data.MIMETYPE));
-                                            if (TextUtils.equals(mimeType, "vnd.android.cursor.item/vnd.org.telegram.messenger.android.call")) {
+                                            if (TextUtils.equals(mimeType, "vnd.android.cursor.item/vnd.org.telegram.alexContest.android.call")) {
                                                 audioCallUser = true;
-                                            } else if (TextUtils.equals(mimeType, "vnd.android.cursor.item/vnd.org.telegram.messenger.android.call.video")) {
+                                            } else if (TextUtils.equals(mimeType, "vnd.android.cursor.item/vnd.org.telegram.alexContest.android.call.video")) {
                                                 videoCallUser = true;
                                             }
                                         }
@@ -2730,7 +2730,7 @@ public class LaunchActivity extends BasePermissionsActivity implements INavigati
                             }
                         }
                     }
-                } else if (intent.getAction().equals("org.telegram.messenger.OPEN_ACCOUNT")) {
+                } else if (intent.getAction().equals("org.telegram.alexContest.OPEN_ACCOUNT")) {
                     open_settings = 1;
                 } else if (intent.getAction().equals("new_dialog")) {
                     open_new_dialog = 1;

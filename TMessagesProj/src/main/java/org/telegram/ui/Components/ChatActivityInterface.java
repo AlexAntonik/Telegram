@@ -1,6 +1,6 @@
 package org.telegram.ui.Components;
 
-import org.telegram.messenger.ChatObject;
+import org.telegram.alexContest.ChatObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.Theme;

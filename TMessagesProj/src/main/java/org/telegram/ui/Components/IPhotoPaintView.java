@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.view.MotionEvent;
 import android.view.View;
 
-import org.telegram.messenger.VideoEditedInfo;
+import org.telegram.alexContest.VideoEditedInfo;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.Paint.RenderView;
 import org.telegram.ui.PhotoViewer;

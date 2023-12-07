@@ -15,7 +15,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
 import android.text.TextUtils;
-import android.util.Log;
 import android.util.Pair;
 import android.util.Size;
 import android.view.Gravity;
@@ -29,8 +28,8 @@ import android.widget.FrameLayout;
 import com.google.android.exoplayer2.C;
 import com.google.zxing.common.detector.MathUtils;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.MessageObject;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.MessageObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.AnimatedFloat;
 import org.telegram.ui.Components.BlurringShader;

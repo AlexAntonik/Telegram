@@ -9,7 +9,7 @@ import android.text.Spanned;
 import android.text.style.DynamicDrawableSpan;
 import android.text.style.ImageSpan;
 
-import org.telegram.messenger.AndroidUtilities;
+import org.telegram.alexContest.AndroidUtilities;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.DialogCell;
 

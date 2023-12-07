@@ -12,7 +12,7 @@ import android.text.TextPaint;
 import android.util.Property;
 import android.view.View;
 
-import org.telegram.messenger.AndroidUtilities;
+import org.telegram.alexContest.AndroidUtilities;
 import org.telegram.ui.ActionBar.Theme;
 
 public class WallpaperCheckBoxView extends View {

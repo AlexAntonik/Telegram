@@ -9,8 +9,8 @@ import android.text.TextPaint;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.Utilities;
 import org.telegram.ui.ActionBar.Theme;
 
 import java.util.ArrayList;

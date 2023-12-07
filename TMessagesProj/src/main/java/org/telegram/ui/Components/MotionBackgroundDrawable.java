@@ -25,12 +25,12 @@ import android.view.View;
 
 import androidx.core.graphics.ColorUtils;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.GenericProvider;
-import org.telegram.messenger.LiteMode;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.Utilities;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.FileLog;
+import org.telegram.alexContest.GenericProvider;
+import org.telegram.alexContest.LiteMode;
+import org.telegram.alexContest.NotificationCenter;
+import org.telegram.alexContest.Utilities;
 
 import java.lang.ref.WeakReference;
 

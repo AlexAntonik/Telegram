@@ -30,15 +30,15 @@ import androidx.core.graphics.ColorUtils;
 
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.ImageReceiver;
-import org.telegram.messenger.MediaController;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.R;
-import org.telegram.messenger.Utilities;
-import org.telegram.messenger.WebFile;
+import org.telegram.alexContest.AndroidUtilities;
+import org.telegram.alexContest.FileLoader;
+import org.telegram.alexContest.ImageLocation;
+import org.telegram.alexContest.ImageReceiver;
+import org.telegram.alexContest.MediaController;
+import org.telegram.alexContest.MessageObject;
+import org.telegram.alexContest.R;
+import org.telegram.alexContest.Utilities;
+import org.telegram.alexContest.WebFile;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.AnimatedFileDrawable;
 import org.telegram.ui.Components.BackupImageView;
