@@ -67,7 +67,6 @@ import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.ImageSpan;
 import android.text.style.URLSpan;
-import android.util.Log;
 import android.util.Pair;
 import android.util.Property;
 import android.util.SparseArray;
@@ -257,6 +256,7 @@ import org.telegram.ui.Components.LinkSpanDrawable;
 import org.telegram.ui.Components.MentionsContainerView;
 import org.telegram.ui.Components.MessageBackgroundDrawable;
 import org.telegram.ui.Components.MessageContainsEmojiButton;
+import org.telegram.ui.Components.DelitionAnimator;
 import org.telegram.ui.Components.MessagePreviewView;
 import org.telegram.ui.Components.MotionBackgroundDrawable;
 import org.telegram.ui.Components.NumberTextView;
@@ -372,6 +372,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
     protected ChatActivityEnterView chatActivityEnterView;
     private ChatActivityEnterTopView chatActivityEnterTopView;
     private int chatActivityEnterViewAnimateFromTop;
+    private DelitionAnimator delitionAnimator;
     private boolean chatActivityEnterViewAnimateBeforeSending;
     private ActionBarMenuItem.Item timeItem2;
     private ActionBarMenu.LazyItem attachItem;
@@ -5727,7 +5728,9 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
 
         selectionReactionsOverlay = new ChatSelectionReactionMenuOverlay(this, context);
         contentView.addView(selectionReactionsOverlay, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
-
+        if (DelitionAnimator.checkVersion()) {
+            contentView.addView(delitionAnimator = new DelitionAnimator(context), LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
+        }
         animatingImageView = new ClippingImageView(context);
         animatingImageView.setVisibility(View.GONE);
         contentView.addView(animatingImageView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
@@ -20683,6 +20686,15 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         LongSparseArray<MessageObject.GroupedMessages> newGroups = null;
         LongSparseArray<Integer> newGroupsSizes = null;
         int size = markAsDeletedMessages.size();
+        final List<MessageObject> messageObjects = new ArrayList<>(markAsDeletedMessages.size());
+        for (int i = 0; i < size; i++) {
+            Integer mid = markAsDeletedMessages.get(i);
+            MessageObject obj = messagesDict[loadIndex].get(mid);
+            if (obj != null) {
+                messageObjects.add(obj);
+            }
+        }
+        chatAdapter.animateDeletionForMessageObjects(messageObjects);
         boolean updatedSelected = false;
         boolean updatedSelectedLast = false;
         boolean updateScheduled = false;
@@ -23828,6 +23840,9 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         }
         if (AvatarPreviewer.hasVisibleInstance()) {
             AvatarPreviewer.getInstance().close();
+        }
+        if (delitionAnimator != null) {
+            delitionAnimator.stopAnimation();
         }
     }
 
@@ -30024,6 +30039,23 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
             }
         }
 
+        public void animateDeletionForMessageObjects(List<MessageObject> messageObjects) {
+            int viewChildCount = chatListView.getChildCount();
+            List<ChatMessageCell> chatMessageCells = new ArrayList<>(messageObjects.size());
+            for (MessageObject messageObject : messageObjects) {
+                for (int i = 0; i < viewChildCount; i++) {
+                    View childView = chatListView.getChildAt(i);
+                    if (childView instanceof ChatMessageCell) {
+                        ChatMessageCell chatMessageCell = (ChatMessageCell) childView;
+                        if (chatMessageCell.getMessageObject() == messageObject) {
+                            chatMessageCells.add(chatMessageCell);
+                            break;
+                        }
+                    }
+                }
+            }
+            delitionAnimator.animate(chatMessageCells);
+        }
         @Override
         public void notifyItemRangeRemoved(int positionStart, int itemCount) {
             if (BuildVars.LOGS_ENABLED) {

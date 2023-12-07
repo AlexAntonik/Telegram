@@ -36,7 +36,7 @@ import java.util.List;
 
 public class ChatListItemAnimator extends DefaultItemAnimator {
 
-    public static final long DEFAULT_DURATION = 250;
+    public static final long DEFAULT_DURATION = 400;
     public static final Interpolator DEFAULT_INTERPOLATOR = new CubicBezierInterpolator(0.19919472913616398, 0.010644531250000006, 0.27920937042459737, 0.91025390625);
 
     private final ChatActivity activity;
